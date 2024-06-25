@@ -1,0 +1,20 @@
+@import "fonts.scss";
+@import "normalize.scss";
+@import "modules/variables.scss";
+@import "modules/custom.scss";
+@import "modules/animation.scss";
+
+//header
+@import "modules/header";
+//footer
+@import "modules/footer";
+//catalog
+@import "modules/catalog";
+//documents
+@import "modules/documents";
+//hero
+@import "modules/hero";
+//document-item
+@import "modules/document-item";
+//controls
+@import "modules/controls";
