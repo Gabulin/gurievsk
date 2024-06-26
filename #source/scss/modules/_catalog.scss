@@ -122,10 +122,30 @@
             }
 
             &.active {
+                position: relative;
                 a {
                     transition: .2s ease;
                     color: $white;
                     background-color: $red-main;
+                    padding-right: 40px;
+                    @media (max-width:1500px) {
+                        padding-right: 30px;
+                    }
+                    /*
+                    @media (max-width:991px) {
+                        padding-right: 20px;
+                    }
+                    @media (max-width:550px) {
+                        padding-right: 10px;
+                    }
+                        */
+                    
+                }
+                &::after {
+                        content: '\1F7A9';
+                        position: absolute;
+                        right: 7%;
+                        color: $white;
                 }
             }            
 

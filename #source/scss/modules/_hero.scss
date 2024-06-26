@@ -21,7 +21,7 @@
     
 
     .hero-wrapper {
-        background-color: #d9d9d96e;
+        background-color: $red-main;
         left: 0;
         padding-right: 50px;
         width: 100%;
@@ -57,11 +57,11 @@
             h2 {
                 font-size: 3.75rem;
                 font-weight: 500;
-                color: $red-main;
+                color: $white;
                 @media (max-width:1921px) {
                     font-size: 2.5rem;
                 }
-                @media (max-width:1300px) {
+                @media (max-width:1450px) {
                     font-size: 2rem;
                 }
                 @media (max-width:992px) {
@@ -103,7 +103,7 @@
         margin-left: -18%;
         @media (max-width:992px) {
             margin-left: auto;
-            background-color: #d9d9d96e;
+            background-color: $red-main;
         }
         @media (max-width:550px) {
             width: 100%;
