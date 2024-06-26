@@ -1,6 +1,6 @@
 // catalog
 .catalog {
-    margin-top: 30px;
+    margin-top: 50px;
     /*
     @media (max-width:991px) {
         margin-bottom: 100px;
@@ -9,10 +9,10 @@
     @media (max-width:676px) {
         margin-bottom: 80px;
     }
-
-    @media (max-width:467px) {
-        margin-bottom: 70px;
-    } */
+    */
+    @media (max-width:550px) {
+        margin-top: 30px;
+    } 
     .button-mobile {
         button {
         transition: .2s ease;

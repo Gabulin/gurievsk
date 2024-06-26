@@ -867,7 +867,7 @@ a {
 @media (max-width: 550px) {
   .header .logo-wrapper .links .eye {
     position: absolute;
-    top: 7px;
+    top: 10px;
     right: 0;
     z-index: 3;
   }
@@ -1255,7 +1255,7 @@ a {
 }
 
 .catalog {
-  margin-top: 30px;
+  margin-top: 50px;
   /*
   @media (max-width:991px) {
       margin-bottom: 100px;
@@ -1264,10 +1264,12 @@ a {
   @media (max-width:676px) {
       margin-bottom: 80px;
   }
-
-  @media (max-width:467px) {
-      margin-bottom: 70px;
-  } */
+  */
+}
+@media (max-width: 550px) {
+  .catalog {
+    margin-top: 30px;
+  }
 }
 .catalog .button-mobile button {
   transition: 0.2s ease;
@@ -1922,7 +1924,7 @@ a {
 .documents-item {
   margin-top: 30px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #8c8c8c;
+  border-bottom: 1px solid #c9cdd1;
 }
 .documents-item__name {
   display: flex;
