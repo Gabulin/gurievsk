@@ -2274,12 +2274,12 @@ a {
 @media (max-width: 550px) {
   .header.doc {
     padding-top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
   }
 }
 @media (max-width: 550px) {
   .header.doc .logo-wrapper {
-    margin-top: 80px;
+    margin-top: 65px;
   }
 }
 .header.doc .logo-wrapper .logo img {
@@ -2451,7 +2451,7 @@ a {
 }
 @media (max-width: 550px) {
   .documents.item {
-    margin-top: 135px;
+    margin-top: 180px;
   }
 }
 .documents.item .documents-item {
