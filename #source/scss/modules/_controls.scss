@@ -13,7 +13,7 @@
             background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7315301120448179) 50%, rgba(255,255,255,0) 100%);
         }
         &.out {
-            display: none;
+            display: none !important;
         }
 
     }
