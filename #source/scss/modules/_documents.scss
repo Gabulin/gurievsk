@@ -141,8 +141,12 @@
                 svg {
                     transition: 0.3 ease;
                     @media (max-width:991px) {
+                        path {
+                            stroke-width: 2;
+                        }
                         width: 20px;
                         height: 23px;
+
                     }
                 }
                 &:hover {

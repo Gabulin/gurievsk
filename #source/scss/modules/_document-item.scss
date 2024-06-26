@@ -1,7 +1,147 @@
+
+.header {
+    &.doc {
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    @media (max-width: 1199px) {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    @media (max-width:567px) {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    @media (max-width:550px) {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+    .logo-wrapper {
+        @media (max-width:550px) {
+            margin-top: 80px;
+        }
+        .logo {
+            
+            img {
+                height: 80px;
+                width: 59px;
+                @media (max-width:968px) {
+                    height: 60px;
+                    width: 49px;
+                }
+
+            }
+            h1 {
+                font-size: 1.1rem; 
+                color: $not-black;
+                @media (max-width:1600px) {
+                    font-size: 1rem;
+                }
+                @media (max-width:1450px) {
+                    font-size: 0.9rem;
+                }
+                @media (max-width:968px) {
+                    font-size: 0.8rem;
+                }
+                @media (max-width:300px) {
+                    font-size: 0.7rem;
+                }
+
+            }
+            
+        }
+        .links {
+            font-size: 1.1rem; 
+            gap: 5px;
+            
+            @media (max-width:1980px) {
+                font-size: 1.1rem;
+            }
+            @media (max-width:1600px) {
+                font-size: 0.9rem;
+            }
+            @media (max-width:968px) {
+                font-size: 0.8rem;
+            }
+            @media (max-width:550px) {
+                font-size: 1.25rem;
+            }
+            svg {
+                width: 31px;
+                height: 31px;
+                @media (min-width:550px) and (max-width:968px) {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .eye {
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                padding: 0 10px;
+                @media (max-width:550px) {
+                    position: absolute;
+                    top: 7px;
+                    right: 0;
+                    z-index: 3;
+                    .responsive-svg {
+                        background-color: $white;
+                        padding: 5px;
+                        border-radius: 50%;
+                    }
+                }
+
+
+            }
+            .administration {
+                padding: 20px 40px;
+                border-radius: 45px;
+                
+                @media (max-width:1600px) {
+                    padding: 10px 50px;
+                    border-radius: 25px;
+                }
+                @media (max-width:550px) {
+                    padding: 20px 25px;
+                    border-radius: 0;
+                }
+            }
+
+        
+        }
+    }
+    }
+} 
+
+.index-document-item {
+    padding-bottom: 30px;
+}
+
+.pdf-container {
+    display: flex;
+    justify-content: center;
+}
+
 #pdf-container {
-    width: 100%;
+    width: 60%;
     height: 100%;
-    overflow-y: visible;
+    
+    @media (max-width:1500px) {
+        width: 70%;
+    }
+    @media (max-width:1280px) {
+        width: 80%;
+    }
+    @media (max-width:991px) {
+        width: 100vw;
+    }
+    @media (max-width:991px) {
+        width: 120vw;
+    }
+    
+
     /*
     border-right: 1px solid $grey-dark;
     border-left: 1px solid $grey-dark;
@@ -11,6 +151,11 @@
     display: block;
     margin: 10px 0;
     width: 100%;
+    /*
+    @media (max-width:992px) {
+        width: 110%;
+    }
+        */
 }
 .documents {
     &.item {
@@ -24,38 +169,39 @@
         @media (max-width:550px) {
             margin-top: 135px;
         }
-    }
-    .documents-item {
-        border: none;
-        &__name {
-            .info__title {
-                p {
-                    margin-top: 20px;
+        .documents-item {
+            border: none;
+            &__name {
+                .info__title {
+                    p {
+                        margin-top: 20px;
+                    }
                 }
-            }
-            .info__date {
-                p {
-                    margin: 0;
-                    margin-top: 10px;
-                    color: $grey-dark;
-                    font-size: 0.9rem;
-                    @media (max-width:550px) {
-                        display: block;
-                    }
-                    @media (max-width:991px) {
-                        font-size: 0.7rem;
-                    }
-                    @media (max-width:767px) {
+                .info__date {
+                    p {
+                        margin: 0;
+                        margin-top: 10px;
+                        color: $grey-dark;
                         font-size: 0.9rem;
+                        @media (max-width:550px) {
+                            display: block;
+                        }
+                        @media (max-width:991px) {
+                            font-size: 0.7rem;
+                        }
+                        @media (max-width:767px) {
+                            font-size: 0.9rem;
+                        }
                     }
-                }
-                span {
-                    @media (max-width:550px) {
-                        display: block !important;
+                    span {
+                        @media (max-width:550px) {
+                            display: block !important;
+                        }
                     }
                 }
             }
+    
         }
-
     }
+    
 }

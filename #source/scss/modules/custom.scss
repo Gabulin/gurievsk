@@ -82,11 +82,17 @@ body {
 }
 
 .container {
+    @media (max-width:991px) {
+        max-width: 94%;
+    }
     @media (min-width: 1200px) and (max-width: 1920px) {
-        max-width: 80%;
+        max-width: 81%;
     }
     @media (min-width: 1921px) {
         max-width: 1860px;
+    }
+    @media (min-width: 2100px) {
+        max-width: 2078px;
     }
 }
 

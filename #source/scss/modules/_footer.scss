@@ -1,4 +1,5 @@
 .footer {
+    margin-top: auto;
     padding: 60px 0 10px 0;
     background-color: $grey-subtile;
     @media (max-width:1500px) {
@@ -11,7 +12,7 @@
         padding-top: 10px;
     }
 }
-
+/*
 .footer-container {
     max-width: 93.5%;
     padding: 0;
@@ -24,6 +25,7 @@
         max-width: 97%;
     }
 }
+*/
 
 .footer-wrapper {
     display: flex;
@@ -41,7 +43,7 @@
 .footer-section.info {
     display: flex;
     gap: 50px;
-    @media (max-width:1800px) {
+    @media (max-width:1920px) {
         gap: 25px;
     }
     @media (max-width:1499px) {
@@ -119,6 +121,9 @@
         display: flex;
         gap: 20px;
         align-items: center;
+        @media (min-width: 1921px) {
+            gap: 15px;
+        }
         @media (max-width:300px) {
             gap: 10px;
         }
@@ -142,7 +147,7 @@
             line-height: 150%;
             letter-spacing: 5%;
             padding-right: 10px;
-            @media (max-width:1200px) {
+            @media (max-width:1920px) {
                 font-size: 0.9rem;
             }
             @media (max-width:300px) {
@@ -163,7 +168,7 @@
         strong {
             font-weight: 500;
         }
-        @media (max-width:1200px) {
+        @media (max-width:1920px) {
             font-size: 0.9rem;
         }
     }
@@ -194,8 +199,19 @@
         @media (max-width:1499px) {
             gap: 10px;
         }
+
+        @media (min-width:1600px) and (max-width:1800px) {
+            flex-direction: column;
+            .socials-section {
+                display: flex;
+                justify-content: space-between;
+                a {
+                    padding: 0;
+                }
+            }
+        }
         
-        @media (min-width:550px) and (max-width:870px) {
+        @media (min-width:550px) and (max-width:950px) {
             flex-direction: column-reverse;
             .socials-section {
                 display: flex;
