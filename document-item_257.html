@@ -460,29 +460,26 @@ window.addEventListener('load', function() {
 </script>
 <script>
   document.addEventListener('scroll', function() {
-    // Определяем элемент с классом 'controls-container'
-    const controlsContainer = document.querySelector('.controls-fixed');
-
-    // Высота всей страницы (включая прокрученную часть)
-    const scrollHeight = document.documentElement.scrollHeight;
-
-    // Высота видимой области окна
-    const clientHeight = document.documentElement.clientHeight;
-
-    // Текущая позиция прокрутки
-    const scrollTop = document.documentElement.scrollTop;
-
-    // Вычисляем процент прокрутки страницы
-    const scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
-
-    // Добавляем или удаляем класс 'out' в зависимости от процента прокрутки
-    if (scrollPercent >= 90) {
-        controlsContainer.classList.add('out');
-    } else {
-        controlsContainer.classList.remove('out');
-    }
-});
-</script>
+     const controlsContainer = document.querySelector('.controls-fixed');
+ 
+     const scrollHeight = document.documentElement.scrollHeight;
+     const clientHeight = document.documentElement.clientHeight;
+ 
+     const scrollTop = document.documentElement.scrollTop;
+ 
+     const scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
+ 
+     const windowWidth = window.innerWidth;
+ 
+     const scrollThreshold = windowWidth <= 600 ? 70 : 85;
+ 
+     if (scrollPercent >= scrollThreshold) {
+         controlsContainer.classList.add('out');
+     } else {
+         controlsContainer.classList.remove('out');
+     }
+ });
+ </script>
 
 
   </body>
